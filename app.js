@@ -22,8 +22,17 @@ const loadPhotoReel = (imageUrl, radius, height) => {
 };
 
 // Example usage
-const reel1 = loadPhotoReel('path/to/photo1.jpg', 1, 2);
-const reel2 = loadPhotoReel('path/to/photo2.jpg', 1, 2);
+const reel1 = loadPhotoReel('docs/1.jpg', 1, 2);
+const reel2 = loadPhotoReel('docs/2.jpg', 1, 2);
+const reel3 = loadPhotoReel('docs/3.jpg', 1, 2);
+const reel4 = loadPhotoReel('docs/4.jpg', 1, 2);
+const reel5 = loadPhotoReel('docs/5.jpg', 1, 2);
+const reel6 = loadPhotoReel('docs/6.jpg', 1, 2);
+const reel7 = loadPhotoReel('docs/7.jpg', 1, 2);
+const reel8 = loadPhotoReel('docs/8.jpg', 1, 2);
+const reel9 = loadPhotoReel('docs/9.jpg', 1, 2);
+const reel10 = loadPhotoReel('docs/10.jpg', 1, 2);
+
 reel2.position.x = 3;
 
 // Render loop
@@ -31,6 +40,14 @@ function animate() {
     requestAnimationFrame(animate);
     reel1.rotation.y += 0.01;
     reel2.rotation.y += 0.01;
+    reel3.rotation.y += 0.01;
+    reel4.rotation.y += 0.01;
+    reel5.rotation.y += 0.01;
+    reel6.rotation.y += 0.01;
+    reel7.rotation.y += 0.01;
+    reel8.rotation.y += 0.01;
+    reel9.rotation.y += 0.01;
+    reel10.rotation.y += 0.01;
     renderer.render(scene, camera);
 }
 
