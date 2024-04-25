@@ -24,16 +24,16 @@ const loadPhotoReel = (imageUrl, radius, height) => {
 };
 
 // Example usage
-const reel1 = loadPhotoReel('docs/1.jpg', 1, 2);
-const reel2 = loadPhotoReel('docs/2.jpg', 1, 2);
-const reel3 = loadPhotoReel('docs/3.jpg', 1, 2);
-const reel4 = loadPhotoReel('docs/4.jpg', 1, 2);
-const reel5 = loadPhotoReel('docs/5.jpg', 1, 2);
-const reel6 = loadPhotoReel('docs/6.jpg', 1, 2);
-const reel7 = loadPhotoReel('docs/7.jpg', 1, 2);
-const reel8 = loadPhotoReel('docs/8.jpg', 1, 2);
-const reel9 = loadPhotoReel('docs/9.jpg', 1, 2);
-const reel10 = loadPhotoReel('docs/10.jpg', 1, 2);
+const reel1 = loadPhotoReel('/docs/1.jpg', 1, 2);
+const reel2 = loadPhotoReel('/docs/2.jpg', 1, 2);
+const reel3 = loadPhotoReel('/docs/3.jpg', 1, 2);
+const reel4 = loadPhotoReel('/docs/4.jpg', 1, 2);
+const reel5 = loadPhotoReel('/docs/5.jpg', 1, 2);
+const reel6 = loadPhotoReel('/docs/6.jpg', 1, 2);
+const reel7 = loadPhotoReel('/docs/7.jpg', 1, 2);
+const reel8 = loadPhotoReel('/docs/8.jpg', 1, 2);
+const reel9 = loadPhotoReel('/docs/9.jpg', 1, 2);
+const reel10 = loadPhotoReel('/docs/10.jpg', 1, 2);
 
 reel1.position.x = 3;
 reel2.position.x = 3;
