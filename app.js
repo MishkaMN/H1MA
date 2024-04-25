@@ -33,7 +33,16 @@ const reel8 = loadPhotoReel('docs/8.jpg', 1, 2);
 const reel9 = loadPhotoReel('docs/9.jpg', 1, 2);
 const reel10 = loadPhotoReel('docs/10.jpg', 1, 2);
 
+reel1.position.x = 3;
 reel2.position.x = 3;
+reel3.position.x = 3;
+reel4.position.x = 3;
+reel5.position.x = 3;
+reel6.position.x = 3;
+reel7.position.x = 3;
+reel8.position.x = 3;
+reel9.position.x = 3;
+reel10.position.x = 3;
 
 // Render loop
 function animate() {
