@@ -2,25 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Three.js Carousel with Countdown</title>
+    <title>Anniversary Countdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <style>
-        body { margin: 0; overflow: hidden; }
-        #countdown {
+        body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
+        #anniversary-message {
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 2em;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
+            top: -5%;
+            width: 100%;
+            text-align: center;
+            font-family: 'Great Vibes', cursive;
+            font-size: 98px;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: none; /* Hidden by default */
+        }
+        #anniversary-message-1 {
+            position: absolute;
+            top: 75%;
+            width: 100%;
+            text-align: center;
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            color: #FFD700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            display: none; /* Hidden by default */
         }
     </style>
 </head>
 <body>
     <div id="countdown"></div>
+    <div id="anniversary-message"><p>Happy 1 Month Anniversary!<br>My Pineapple! 💖</p></div>
+    <div id="anniversary-message-1"><p>
+      You made the 2024 the best year of my life, yet!<br>
+      Here's to many more fun adventures together, and sushi! 🍣<br>
+      You are the love poem I carry everyday in my chest<br>
+      ~Your L</p></div>
     <script type="module" src="app.js"></script>
 </body>
 </html>

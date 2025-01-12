@@ -16,12 +16,12 @@ function updateCountdown() {
 
         // Display the countdown
         document.getElementById("countdown").innerHTML =
-            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            `<p>xexe xoxo :*<br>${days}d ${hours}h ${minutes}m ${seconds}s</p>`;
 
         // Repeat the function every second
         setTimeout(updateCountdown, 1000);
     } else {
-        // Countdown has finished, hide the countdown and initialize the application
+        // Countdown has finished
         document.getElementById("countdown").style.display = "none";
         initializeApplication();
     }
@@ -31,11 +31,18 @@ function updateCountdown() {
 function initializeApplication() {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-    camera.position.z = 10;
+    camera.position.z = 20;
 
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.body.appendChild(renderer.domElement);
+
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
 
     // Create a group for the carousel
     const carousel = new THREE.Group();
@@ -63,8 +70,8 @@ function initializeApplication() {
 
         // Calculate the angle and position for each image
         const angle = (index / total) * 2 * Math.PI;
-        plane.position.x = Math.cos(angle) * 7.5;  // 7.5 is the radius of the carousel
-        plane.position.z = Math.sin(angle) * 7.5;
+        plane.position.x = Math.cos(angle) * 15.0;  // 7.5 is the radius of the carousel
+        plane.position.z = Math.sin(angle) * 15.0;
 
         // Rotate the image to always face the center
         plane.lookAt(0, 0, 0);
@@ -73,10 +80,17 @@ function initializeApplication() {
     }
 
     // Populate the carousel with images
-    const numImages = 10;
-    for (let i = 0; i < numImages; i++) {
-        const imageUrl = i === 0 ? `land_${i + 1}.jpg` : `${i + 1}.jpg`;
-        addPhotoToCarousel(imageUrl, i, numImages);
+    const numImagesLand = 3;
+    const numImagesPort = 18;
+    const totalImages = numImagesLand + numImagesPort;
+
+    for (let i = 0; i < numImagesLand; i++) {
+        const imageUrl = `land_${i + 1}.jpg`;
+        addPhotoToCarousel(imageUrl, i, totalImages);
+    }
+    for (let i = 0; i < numImagesPort; i++) {
+        const imageUrl = `${i + 1}.jpg`
+        addPhotoToCarousel(imageUrl, numImagesLand + i, totalImages);
     }
 
     // Rotate the carousel
@@ -100,9 +114,13 @@ function initializeApplication() {
 
         renderer.render(scene, camera);
     }
+    document.getElementById("anniversary-message").style.display = "block";
+    document.getElementById("anniversary-message-1").style.display = "block";
+
 
     animate();
 }
 
 // Start the countdown
-updateCountdown();
+//updateCountdown();
+initializeApplication();

@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#countdown {
+    font-size: 5vw; /* Responsive font size */
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#anniversary-message, #anniversary-message-1 {
+    font-family: 'Great Vibes', cursive;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Hidden by default */
+}
+
+#anniversary-message {
+    top: 10%;
+    font-size: 8vw; /* Responsive font size */
+}
+
+#anniversary-message-1 {
+    top: 75%;
+    font-size: 4vw; /* Responsive font size */
+}
+
+@media (min-width: 768px) {
+    #anniversary-message {
+        font-size: 4vw;
+    }
+    #anniversary-message-1 {
+        font-size: 2vw;
+    }
+}
