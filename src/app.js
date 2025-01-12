@@ -16,7 +16,7 @@ function updateCountdown() {
 
         // Display the countdown
         document.getElementById("countdown").innerHTML =
-            `<p>xexe xoxo :*<br>${days}d ${hours}h ${minutes}m ${seconds}s</p>`;
+            `<p>xexe xoxo 😚<br>${days}d ${hours}h ${minutes}m ${seconds}s</p>`;
 
         // Repeat the function every second
         setTimeout(updateCountdown, 1000);
