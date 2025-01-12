@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<meta charset="utf-8">
-        <title>3D Photo Reel</title>
-        <style>
-			body { margin: 0; }
-		</style>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Three.js Carousel with Countdown</title>
+      <style>
+          body { margin: 0; overflow: hidden; }
+          #countdown {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 2em;
+              background-color: rgba(0, 0, 0, 0.7);
+              color: white;
+              padding: 20px;
+              border-radius: 10px;
+          }
+      </style>
     </head>
     <body>
-		<script type="module" src="./app.js"></script>
+      <div id="countdown"></div>
+		  <script type="module" src="./app.js"></script>
     </body>
 </html>
