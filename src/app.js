@@ -73,7 +73,7 @@ function initializeApplication() {
     }
 
     // Populate the carousel with images
-    const numImages = 20;
+    const numImages = 10;
     for (let i = 0; i < numImages; i++) {
         const imageUrl = i === 0 ? `land_${i + 1}.jpg` : `${i + 1}.jpg`;
         addPhotoToCarousel(imageUrl, i, numImages);
