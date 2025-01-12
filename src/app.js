@@ -80,8 +80,8 @@ function initializeApplication() {
     }
 
     // Populate the carousel with images
-    const numImagesLand = 3;
-    const numImagesPort = 18;
+    const numImagesLand = 4;
+    const numImagesPort = 17;
     const totalImages = numImagesLand + numImagesPort;
 
     for (let i = 0; i < numImagesLand; i++) {
