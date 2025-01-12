@@ -122,5 +122,5 @@ function initializeApplication() {
 }
 
 // Start the countdown
-//updateCountdown();
-initializeApplication();
+updateCountdown();
+//initializeApplication();

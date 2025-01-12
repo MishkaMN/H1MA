@@ -6,7 +6,9 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    background-color: #000000; /* Black background */
 }
+
 
 #countdown {
     font-size: 5vw; /* Responsive font size */
@@ -34,12 +36,12 @@ body {
 }
 
 #anniversary-message {
-    top: 10%;
+    top: 0%;
     font-size: 8vw; /* Responsive font size */
 }
 
 #anniversary-message-1 {
-    top: 75%;
+    top: 80%;
     font-size: 4vw; /* Responsive font size */
 }
 
